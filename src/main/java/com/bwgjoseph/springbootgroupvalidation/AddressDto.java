@@ -1,8 +1,11 @@
 package com.bwgjoseph.springbootgroupvalidation;
 
-import jakarta.validation.constraints.Min;
+import com.bwgjoseph.springbootgroupvalidation.group.HomeGroup;
 
-// @ValidateForHome(message = "ownership is a must!")
-@Conditional(selected = "type", values = {"home"}, required = {"ownership"})
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+
+// @ValidateForHome(message = "ownership is a must!") // simple
+// @Conditional(selected = "type", values = {"home"}, required = {"ownership"}) // conditional
 // ownership is only required if type is home
-public record AddressDto(String address, String postalCode, @Min(10) String country, String type, String ownership) {}
+public record AddressDto(String address, String postalCode, @Min(10) String country, String type, @NotBlank(groups = HomeGroup.class) String ownership) {}
