@@ -1,4 +1,4 @@
-package com.bwgjoseph.springbootgroupvalidation;
+package com.bwgjoseph.springbootgroupvalidation.conditional;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;

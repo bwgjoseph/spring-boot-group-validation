@@ -1,4 +1,4 @@
-package com.bwgjoseph.springbootgroupvalidation;
+package com.bwgjoseph.springbootgroupvalidation.conditional;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Repeatable;
