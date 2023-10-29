@@ -1,4 +1,4 @@
-package com.bwgjoseph.springbootgroupvalidation;
+package com.bwgjoseph.springbootgroupvalidation.simple;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,4 +1,6 @@
-package com.bwgjoseph.springbootgroupvalidation;
+package com.bwgjoseph.springbootgroupvalidation.simple;
+
+import com.bwgjoseph.springbootgroupvalidation.AddressDto;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
